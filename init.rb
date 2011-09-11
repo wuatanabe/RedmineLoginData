@@ -1,16 +1,12 @@
 require 'redmine'
-
 require 'log_login_patch'
 
 Redmine::Plugin.register :redmine_logindata do
   name 'Redmine Logindata plugin'
-  author 'Paolo Freuli'
-  description 'On Login and related actions, log both ip and username'
-  version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  author 'Wuatanabe'
+  description 'Wrap Login and similar account related actions, in order to log more info.'
+  version '0.0.2'
+  url 'https://github.com/wuatanabe/RedmineLoginData'
+  author_url 'https://github.com/wuatanabe'
 end
 
-puts "*"*30
-puts "Loading Logindata"
-puts "*"*30
