@@ -1,7 +1,14 @@
-= logindata plugin
+= Redmine login data plugin
 
 Very Simple Redmine Plugin  - version 0.1
 
+== Description
+
 Login method is wrapped in order to log more info.
 Currently only the login method is managed.
+More controller method can be wrapped by using the same pattern.
+
+== Usage
+
+Just drop in Redmine RAILS_ROOT/vendor/plugins dir
 

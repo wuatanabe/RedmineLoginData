@@ -13,14 +13,13 @@ module AccountControllerPatch
     # Add some additional log to login 
   def login_with_log
 	if request.get?	  
-	## puts "** (When just loading the login form) **  Loading login form: Request IP is "+request.ip.to_s
+	## puts " ****  Loading login form: Request IP is "+request.ip.to_s
 	else
-	puts "**(When submittiing login and password)** Login attempt with user #{params[:username]} from IP  "+request.ip.to_s 
+	 logger.warn   "**01** Login attempt with user #{params[:username]} from "+ request.remote_ip.to_s +" at #{Time.now.utc}"
 end
 	# Wrapped original login method
 	login_without_log	  
   end
-    
     
   end
 end
