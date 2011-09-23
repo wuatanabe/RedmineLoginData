@@ -1,6 +1,6 @@
 = logindata plugin
 
-Very Simple Redmine Plugin  - version 0.1
+Very Simple Redmine Plugin  - version 0.2
 
 Login method is wrapped in order to log more info.
 Login attempt/success/failure and logout events are managed.
