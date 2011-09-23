@@ -3,5 +3,5 @@
 Very Simple Redmine Plugin  - version 0.1
 
 Login method is wrapped in order to log more info.
-Currently only the login method is managed.
+Login attempt/success/failure and logout events are managed.
 
