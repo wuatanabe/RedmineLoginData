@@ -9,14 +9,14 @@ module AccountControllerPatch
       alias_method_chain :successful_authentication, :msg2
       alias_method_chain :logout, :msg3 
       
-      # Note: not managing login failure (already correctly managed in account_controller.inve
+      # Note: not managing login failure (already correctly managed in account_controller)
       # alias_method_chain :invalidcredential, :msg4
     end
   end
   
   module InstanceMethods
     
-  # Adds a rates tab to the user administration page
+  
   def login_with_msg1
 	if request.get?	  
 		## When just loading the login form
